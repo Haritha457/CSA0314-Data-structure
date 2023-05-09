@@ -1,0 +1,39 @@
+ #include <stdio.h>
+
+int main() {
+   int arr[100], n, i, pos, value;
+
+   printf("Enter the size of the array: ");
+   scanf("%d", &n);
+   printf("Enter the elements of the array: ");
+   for (i = 0; i < n; i++) {
+      scanf("%d", &arr[i]);
+   }
+   printf("\nInitial array:\n");
+   for (i = 0; i < n; i++) {
+      printf("%d ", arr[i]);
+   }
+   printf("\n\nInsert operation:\n");
+   printf("Enter the position where you want to insert an element: ");
+   scanf("%d", &pos);
+   printf("Enter the value you want to insert: ");
+   scanf("%d", &value);
+   for (i = n - 1; i >= pos - …
+[8:21 pm, 05/05/2023] 👻.....: #include <stdio.h>
+
+int main() {
+    int num, reversed_num = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while (num != 0) {
+        int digit = num % 10;
+        reversed_num = reversed_num * 10 + digit;
+        num /= 10;
+    }
+
+    printf("Reversed number: %d", reversed_num);
+
+    return 0;
+}
